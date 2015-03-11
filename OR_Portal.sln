@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORPortal_MVC", "ORPortal_MVC\ORPortal_MVC.csproj", "{37C96E1A-2FEA-452B-821A-5515A8BA2845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORPortal_MVC.Tests", "ORPortal_MVC.Tests\ORPortal_MVC.Tests.csproj", "{3B8333D2-70E2-415A-B09D-07FAC3DA016F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37C96E1A-2FEA-452B-821A-5515A8BA2845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C96E1A-2FEA-452B-821A-5515A8BA2845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C96E1A-2FEA-452B-821A-5515A8BA2845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C96E1A-2FEA-452B-821A-5515A8BA2845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B8333D2-70E2-415A-B09D-07FAC3DA016F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B8333D2-70E2-415A-B09D-07FAC3DA016F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B8333D2-70E2-415A-B09D-07FAC3DA016F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B8333D2-70E2-415A-B09D-07FAC3DA016F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,96 @@
+﻿body {
+    height: 800px;
+    width: 100%;
+    background-color: white;
+}
+
+#Homebtn {
+    height: 40px;
+    width: 80px;
+    margin-left: 70%;
+    text-align: left;
+}
+
+#headerlogo {
+    Height: 77px;
+    Width: 405px;
+    Text-Align: Left;
+    margin-left: 0px;
+}
+
+#headertext {
+    color: black;
+    text-align: center;
+    Font-Size: XX-Large;
+    Text-Align: Center;
+    margin-left: 15%;
+    font-weight: Bold;
+}
+
+#renderbody {
+    height: 65%;
+    width: 100%;
+    background-color: #fcf3be;
+}
+
+#footer {
+    text-align: left;
+    height: 5%;
+    background-color: #FF9B6A;
+}
+
+#TextBox1 {
+    border-color: #CC0000;
+    border-style: Solid;
+    Border-Width: 3px;
+    Color: Black;
+    Height: 35px;
+    Width: 414px;
+    font-weight: bold;
+    margin-left: 0px;
+    text-align: center;
+    font-size: medium;
+}
+
+#TextBox2 {
+    border-color: #CC0000;
+    border-style: Solid;
+    Border-Width: 3px;
+    Color: Black;
+    Height: 34px;
+    Width: 250px;
+    font-weight: bold;
+    margin-left: 0px;
+    text-align: center;
+    font-size: medium;
+}
+
+#btn1 > td > div {
+    width: 182px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+#btn2 > td > div {
+    width: 182px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+#iTable1 {
+    width: 99%;
+    border-collapse: collapse;
+    background-color: #FFFFCC;
+    height: 400px;
+    margin-top: 1em;
+    margin-right: 0px;
+}
+
+#iTable2 {
+    border: 3px solid #CC6666;
+    width: 938px;
+    border-collapse: collapse;
+    margin-left: 167px;
+    margin-top: 3%;
+    height: 426px;
+}

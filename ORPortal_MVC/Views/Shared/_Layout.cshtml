@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+
+            $("#Homebtn").button()
+                .click();
+        });
+        function Dark(mnu) {
+            //			document.getElementById(mnu).style.background='#CC6666';
+            //			document.getElementById(mnu).style.color='#FFFFFF';
+            document.getElementById(mnu).style.border = '2px solid #993300';
+        }
+        function Light(mnu) {
+            //			document.getElementById(mnu).style.background='#FF9966';
+            //			document.getElementById(mnu).style.color='#000000';
+            document.getElementById(mnu).style.border = '2px solid #CC6666';
+        }
+    </script>
+</head>
+<body>
+    <header>
+            <meta charset="utf-8" />
+            <div class="main-content""content-wrapper"  style="height:25%;">
+                <p  style="background-color:white;" >
+                   <img src="~/Images/headerLogo.jpg" alt="logo" id="headerlogo" />
+                    
+                    <label id="headertext">OR Display</label>
+                        
+                </p>
+           </div>
+                </header>
+    
+     <div id="renderbody" >
+            @RenderSection("featured", required: false)
+            <section class="main-content" style="text-align:center; color:black;">
+             @RenderBody()
+               
+            </section>
+            
+        </div>
+    <div id="footer">
+         <p>©Ideonics - ideas &amp; electronics<input value="Home" id="Homebtn" type="submit"  /></p>
+    </div>
+    </body>
+</html>

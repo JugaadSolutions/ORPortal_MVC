@@ -12,16 +12,18 @@
         $(function () {
 
             $("#Homebtn").button()
-                .mouseover(function Dark(mnu) {
-                    document.getElementById(mnu).style.border = '2px solid #993300';
-                })
-         
-                .css('background', '#FF9B6A')
-                .css('color', 'black')
-                .css('border', '2px solid #CC6666')
-                .css('font-weight', 'normal')
-                .css('font-size', 'medium')
-                .click();
+            .css('background', '#FF9B6A')
+            .css('color', 'black')
+            .css('border', '2px solid #CC6666')
+            .css('font-weight', 'normal')
+            .css('font-size', 'medium')
+            .click()
+            .mouseover(function () {
+                $(this).css('border', '2px solid #993300')
+            })
+            .mouseout(function () {
+                $(this).css('border', '2px solid #CC6666')
+            });
         });
         //function Dark(mnu) {
         //    //			document.getElementById(mnu).style.background='#CC6666';
@@ -57,7 +59,7 @@
             
         </div>
     <div id="footer">
-         <p>©Ideonics - ideas &amp; electronics<input value="Home" id="Homebtn" type="submit" onmouseover="Dark('Homebtn')" onmouseout="Light('Homebtn')" /></p>
+         <p>©Ideonics - ideas &amp; electronics<input value="Home" id="Homebtn" type="submit" /></p>
     </div>
     </body>
 </html>

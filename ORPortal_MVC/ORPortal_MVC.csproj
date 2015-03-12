@@ -39,10 +39,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -107,6 +115,99 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Actual.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Break.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Command.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CommonProblem.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\getDefinedStopDuration_Result.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\getOffDuration_Result.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\getUnDefinedStopDuration_Result.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Machine.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MachineGroup.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MachineInput.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ManPower.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OFF.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORPortal.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORPortal.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORPortal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORPortal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ORPortal.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Plan.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Project.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProjectMachine.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProjectTracker.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Scrap.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Session.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Shift.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ShiftMachine.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SpecificProblem.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Stop.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>ORPortal.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -188,6 +289,23 @@
     <Content Include="Images\whiteTriangle .png" />
     <Content Include="Scripts\Gruntfile.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
+    <EntityDeploy Include="Models\ORPortal.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ORPortal.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ORPortal.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ORPortal.edmx</DependentUpon>
+      <LastGenOutput>ORPortal.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ORPortal.edmx.diagram">
+      <DependentUpon>ORPortal.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ORPortal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ORPortal.edmx</DependentUpon>
+      <LastGenOutput>ORPortal.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -229,7 +347,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -242,6 +359,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

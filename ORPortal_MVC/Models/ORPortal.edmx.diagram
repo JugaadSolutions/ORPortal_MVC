@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="deb8ac8341bd4c6498c2c1467e4a67ae" Name="Diagram1">
+        <EntityTypeShape EntityType="IOR_V1Model.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Actual" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Break" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.CommonProblem" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.MachineGroup" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.MachineInput" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Machine" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.OFF" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Plan" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.ProjectMachine" Width="1.5" PointX="8.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Project" Width="1.5" PointX="6" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Session" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.ShiftMachine" Width="1.5" PointX="8.25" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Shift" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.SpecificProblem" Width="1.5" PointX="5.25" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.sysdiagram" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Command" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.ManPower" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.ProjectTracker" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Scrap" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IOR_V1Model.Stop" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="IOR_V1Model.FK_Breaks_Machines" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_Breaks_Shifts" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_dbo_Machines_dbo_MachineGroups_MachineGroupId" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_dbo_MachineInputs_dbo_Machines_MachineId" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_dbo_ProjectMachines_dbo_Machines_Machine_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_dbo_Sessions_dbo_Machines_Machine_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_dbo_ShiftMachines_dbo_Machines_Machine_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_SpecificProblems_Machines" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_dbo_ProjectMachines_dbo_Projects_Project_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_dbo_Sessions_dbo_Shifts_Shift_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="IOR_V1Model.FK_dbo_ShiftMachines_dbo_Shifts_Shift_Id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

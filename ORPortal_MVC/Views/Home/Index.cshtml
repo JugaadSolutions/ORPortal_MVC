@@ -2,102 +2,95 @@
     ViewBag.Title = "Index";
 }
 <script type="text/javascript">
-        
+
     $(function () {
-        $("#TextBox1").button();
-        $("#TextBox2").button();
-            $("#CP_Setting").button()
+        $("#TextBox1").text();
+        $("#TextBox2").text();
+        $("#CP_Setting").button()
+          .mouseover(function Dark(mnu) {
+              document.getElementById(mnu).style.border = '2px solid #993300';
+          })
+         
                 .css('background', '#FF9B6A')
                 .css('color', 'black')
                 .css('border', '2px solid #CC6666')
                 .css('font-weight', 'normal')
                 .css('font-size', 'medium')
                 .click();
-            $("#CP_Display").button()
+        $("#CP_Display").button()
+            .mouseover(function Dark(mnu) {
+                document.getElementById(mnu).style.border = '2px solid #993300';
+            })
+         
                 .css('background', '#FF9B6A')
                 .css('color', 'black')
                 .css('border', '2px solid #CC6666')
                 .css('font-weight', 'normal')
                 .css('font-size', 'medium')
                 .click();
-        });
-        function Dark(mnu) {
-            //			document.getElementById(mnu).style.background='#CC6666';
-            //			document.getElementById(mnu).style.color='#FFFFFF';
-            document.getElementById(mnu).style.border = '2px solid #993300';
-        }
-        function Light(mnu) {
-            //			document.getElementById(mnu).style.background='#FF9966';
-            //			document.getElementById(mnu).style.color='#000000';
-            document.getElementById(mnu).style.border = '2px solid #CC6666';
-        }
-        
-    </script>
+    });
+    //function Dark(mnu) {
+
+    //    document.getElementById(mnu).style.border = '2px solid #993300';
+    //}
+    //function Light(mnu) {
+
+    //    document.getElementById(mnu).style.border = '2px solid #CC6666';
+    //}
+
+</script>
 <table id="iTable1">
-        <tr>
-            <td style="width: 1044px; height: 428px;">
-                <table id="iTable2">
-                    <tr>
-                        <td style="width: 117px; text-align: center;" rowspan="7">&nbsp;</td>
-                        <td style="text-align: center; height: 23px;" colspan="2"></td>
-                        <td style="height: 23px; width: 1103px; text-align: center;">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #FFCC66; height: 68px; text-align: center;" colspan="2">
-                            <input ID="TextBox1" type="button" value="Machine Groups" />
-                        </td>
-                        <td style="width: 1103px; text-align: center; height: 68px;">
+    <tr>
+        <td style="width: 1044px; height: 428px;">
+            <table id="iTable2">
+                <tr>
+                    <td style="width: 117px; text-align: center;" rowspan="7">&nbsp;</td>
+                    <td style="text-align: center; height: 23px;" colspan="2"></td>
+                    <td style="height: 23px; width: 1103px; text-align: center;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #FFCC66; height: 68px; text-align: center;" colspan="2">
+                        <input id="TextBox1" type="text" value="Machine Groups" disabled="disabled" />
+                    </td>
+                    <td style="width: 1103px; text-align: center; height: 68px;">
 
-                            <input ID="TextBox2" type="button"  value="Problems"/>
+                        <input id="TextBox2" type="text" value="Problems" disabled="disabled" />
 
 
-                        </td>
-                    </tr>
-                    <tr id="btn1">
-                        <td style="background-color: #FFCC66; width: 434px; height: 89px; text-align: center">
-                            
-                            
-                        </td>
-                        <td style="background-color: #FFCC66; width: 243px; height: 89px; text-align: center">
-                            
-                            
-                        </td>
-                        <td id="CPS" style="width: 1103px; text-align: center; height: 48px;">
-                            
-                                <input ID="CP_Setting" type="button"  value="Common Problems-Setting" onmouseover="Dark('CP_Setting')" onmouseout="Light('CP_Setting')" />
-                            
-                            
-                        </td>
-                    </tr>
-                    <tr id="btn2">
-                        <td style="background-color: #FFCC66; text-align: center; height: 48px; width: 434px;">
-                           
-                             
-                     
-                        </td>
-                        <td style="background-color: #FFCC66; text-align: center; height: 48px; width: 243px;">
-                            
-                            
-                        </td>
-                        <td id="CPD" style="width: 1103px; height: 48px;">
-                            
-                               <input ID="CP_Display" type="button"  value="Common Problems-Display"  onmouseover="Dark('CP_Display')" onmouseout="Light('CP_Display')"/>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #FFCC66; text-align: center;" colspan="2">&nbsp;</td>
-                        <td style="width: 1103px; text-align: center;">&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #FFCC66; height: 17px; text-align: center;" colspan="2"></td>
-                        <td style="width: 1103px; height: 17px;"></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center; height: 39px;" colspan="2"></td>
-                        <td style="height: 39px; width: 1103px;"></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+                    </td>
+                </tr>
+                <tr id="btn1">
+                    <td style="background-color: #FFCC66; width: 434px; height: 89px; text-align: center"></td>
+                    <td style="background-color: #FFCC66; width: 243px; height: 89px; text-align: center"></td>
+                    <td id="CPS" style="width: 1103px; text-align: center; height: 48px;">
+
+                        <input id="CP_Setting" type="button" value="Common Problems-Setting" onmouseover="Dark('CP_Setting')" onmouseout="Light('CP_Setting')" />
+
+
+                    </td>
+                </tr>
+                <tr id="btn2">
+                    <td style="background-color: #FFCC66; text-align: center; height: 48px; width: 434px;"></td>
+                    <td style="background-color: #FFCC66; text-align: center; height: 48px; width: 243px;"></td>
+                    <td id="CPD" style="width: 1103px; height: 48px;">
+
+                        <input id="CP_Display" type="button" value="Common Problems-Display" onmouseover="Dark('CP_Display')" onmouseout="Light('CP_Display')" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: #FFCC66; text-align: center;" colspan="2">&nbsp;</td>
+                    <td style="width: 1103px; text-align: center;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="background-color: #FFCC66; height: 17px; text-align: center;" colspan="2"></td>
+                    <td style="width: 1103px; height: 17px;"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; height: 39px;" colspan="2"></td>
+                    <td style="height: 39px; width: 1103px;"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

@@ -4,14 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+      <script src="~/Scripts/jquery-1.10.2.js"></script>
+      <script src="~/Scripts/jquery-ui-1.8.20.js"></script>
     <link href="~/Content/Site.css" rel="stylesheet" />
     <script type="text/javascript">
         $(function () {
 
             $("#Homebtn").button()
+                .mouseover(function Dark(mnu) {
+                    document.getElementById(mnu).style.border = '2px solid #993300';
+                })
+         
                 .css('background', '#FF9B6A')
                 .css('color', 'black')
                 .css('border', '2px solid #CC6666')
@@ -19,16 +23,16 @@
                 .css('font-size', 'medium')
                 .click();
         });
-        function Dark(mnu) {
-            //			document.getElementById(mnu).style.background='#CC6666';
-            //			document.getElementById(mnu).style.color='#FFFFFF';
-            document.getElementById(mnu).style.border = '2px solid #993300';
-        }
-        function Light(mnu) {
-            //			document.getElementById(mnu).style.background='#FF9966';
-            //			document.getElementById(mnu).style.color='#000000';
-            document.getElementById(mnu).style.border = '2px solid #CC6666';
-        }
+        //function Dark(mnu) {
+        //    //			document.getElementById(mnu).style.background='#CC6666';
+        //    //			document.getElementById(mnu).style.color='#FFFFFF';
+        //    document.getElementById(mnu).style.border = '2px solid #993300';
+        //}
+        //function Light(mnu) {
+        //    //			document.getElementById(mnu).style.background='#FF9966';
+        //    //			document.getElementById(mnu).style.color='#000000';
+        //    document.getElementById(mnu).style.border = '2px solid #CC6666';
+        //}
     </script>
 </head>
 <body>

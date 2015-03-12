@@ -59,20 +59,20 @@
     Color: Black;
     Height: 34px;
     Width: 250px;
-    font-weight: bold;
+    font-weight:bold;
     margin-left: 0px;
     text-align: center;
     font-size: medium;
 }
 
-#btn1 > td > div {
-    width: 182px;
+#btn1 > td > input {
+    width: 250px;
     height: 45px;
     margin-left: 10px;
 }
 
-#btn2 > td > div {
-    width: 182px;
+#btn2 > td > input {
+    width: 250px;
     height: 45px;
     margin-left: 10px;
 }
@@ -93,4 +93,14 @@
     margin-left: 167px;
     margin-top: 3%;
     height: 426px;
+}
+#CP_Setting.ui-button {
+      
+    background-color:#FF9B6A;
+    border: solid 1px #FF9B6A;
+}
+#CP_Display {
+      
+    background-color:#FF9B6A;
+    border: solid 1px #FF9B6A;
 }

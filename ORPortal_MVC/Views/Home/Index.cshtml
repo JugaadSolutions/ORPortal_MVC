@@ -1,7 +1,38 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
-
+<script type="text/javascript">
+        
+    $(function () {
+        $("#TextBox1").button();
+        $("#TextBox2").button();
+            $("#CP_Setting").button()
+                .css('background', '#FF9B6A')
+                .css('color', 'black')
+                .css('border', '2px solid #CC6666')
+                .css('font-weight', 'normal')
+                .css('font-size', 'medium')
+                .click();
+            $("#CP_Display").button()
+                .css('background', '#FF9B6A')
+                .css('color', 'black')
+                .css('border', '2px solid #CC6666')
+                .css('font-weight', 'normal')
+                .css('font-size', 'medium')
+                .click();
+        });
+        function Dark(mnu) {
+            //			document.getElementById(mnu).style.background='#CC6666';
+            //			document.getElementById(mnu).style.color='#FFFFFF';
+            document.getElementById(mnu).style.border = '2px solid #993300';
+        }
+        function Light(mnu) {
+            //			document.getElementById(mnu).style.background='#FF9966';
+            //			document.getElementById(mnu).style.color='#000000';
+            document.getElementById(mnu).style.border = '2px solid #CC6666';
+        }
+        
+    </script>
 <table id="iTable1">
         <tr>
             <td style="width: 1044px; height: 428px;">
@@ -17,51 +48,41 @@
                         </td>
                         <td style="width: 1103px; text-align: center; height: 68px;">
 
-                            <input ID="TextBox2" runat="server" value="Problems"/>
+                            <input ID="TextBox2" type="button"  value="Problems"/>
 
 
                         </td>
                     </tr>
                     <tr id="btn1">
                         <td style="background-color: #FFCC66; width: 434px; height: 89px; text-align: center">
-                            <div id="Div1" onmouseover="Dark('Div1')" onmouseout="Light('Div1')"">
-                                
-                            </div>
+                            
                             
                         </td>
                         <td style="background-color: #FFCC66; width: 243px; height: 89px; text-align: center">
-                            <div id="Div2" onmouseover="Dark('Div2')" onmouseout="Light('Div2')">
-                                
-                            </div>
+                            
                             
                         </td>
-                        <td style="width: 1103px; text-align: center; height: 89px;">
-                            <div id="Div3" onmouseover="Dark('Div3')" onmouseout="Light('Div3')" 
-                                style="margin-left: 100px; width:250px">
-                                
-                            </div>
+                        <td id="CPS" style="width: 1103px; text-align: center; height: 48px;">
+                            
+                                <input ID="CP_Setting" type="button"  value="Common Problems-Setting" onmouseover="Dark('CP_Setting')" onmouseout="Light('CP_Setting')" />
+                            
                             
                         </td>
                     </tr>
                     <tr id="btn2">
                         <td style="background-color: #FFCC66; text-align: center; height: 48px; width: 434px;">
-                            <div id="Div4" onmouseover="Dark('Div4')" onmouseout="Light('Div4')">
-                                
-                            </div>
+                           
                              
                      
                         </td>
                         <td style="background-color: #FFCC66; text-align: center; height: 48px; width: 243px;">
-                            <div id="Div6" onmouseover="Dark('Div6')" onmouseout="Light('Div6')" >
-                                
-                            </div>
+                            
                             
                         </td>
-                        <td style="width: 1103px; height: 48px;">
-                            <div id="Div5" onmouseover="Dark('Div5')" onmouseout="Light('Div5')" 
-                                style="margin-left: 100px; width:250px">
-                               
-                            </div>
+                        <td id="CPD" style="width: 1103px; height: 48px;">
+                            
+                               <input ID="CP_Display" type="button"  value="Common Problems-Display"  onmouseover="Dark('CP_Display')" onmouseout="Light('CP_Display')"/>
+                            
                         </td>
                     </tr>
                     <tr>

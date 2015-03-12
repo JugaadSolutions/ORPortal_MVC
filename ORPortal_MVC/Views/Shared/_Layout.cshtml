@@ -12,6 +12,11 @@
         $(function () {
 
             $("#Homebtn").button()
+                .css('background', '#FF9B6A')
+                .css('color', 'black')
+                .css('border', '2px solid #CC6666')
+                .css('font-weight', 'normal')
+                .css('font-size', 'medium')
                 .click();
         });
         function Dark(mnu) {
@@ -48,7 +53,7 @@
             
         </div>
     <div id="footer">
-         <p>©Ideonics - ideas &amp; electronics<input value="Home" id="Homebtn" type="submit"  /></p>
+         <p>©Ideonics - ideas &amp; electronics<input value="Home" id="Homebtn" type="submit" onmouseover="Dark('Homebtn')" onmouseout="Light('Homebtn')" /></p>
     </div>
     </body>
 </html>

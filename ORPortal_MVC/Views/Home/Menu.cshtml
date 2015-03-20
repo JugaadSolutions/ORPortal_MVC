@@ -1,0 +1,175 @@
+﻿@model ORPortal_MVC.Models.MachineGroup
+
+@{
+    ViewBag.Title = "Menu";
+    
+}
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery-ui-1.8.20.js"></script>
+
+<script type="text/javascript">
+
+    $(function () {
+        
+        $("#mTextBox1,#mTextBox2,#mTextBox3,#mTextBox4,#mTextBox5,#mTextBox6,#mTextBox7").text()
+        
+        $("#mButton1,#mButton2,#mButton3,#mButton4,#mButton5,#mButton6,#mButton7,#mButton8,#mButton9,#mButton10,#mButton11,#mButton12,#mButton13,#mButton14,#mButton15,#mButton16,#mButton17,#mButton18,#mButton19,#mButton20").button()
+                .css({ 'background': '#FF9B6A', 'height': '35px', 'width': '230px', 'color': 'black', 'border': '2px solid #CC6666', 'font-weight': 'normal',
+                    'font-size': 'small' })
+                .click()
+                .mouseover(function () {
+                    $(this).css('border', '2px solid #993300')
+                })
+                .mouseout(function () {
+                    $(this).css('border', '2px solid #CC6666')
+                })
+        
+
+
+    });
+
+
+
+</script>
+<table id="mTable">
+    <tr>
+        <td>
+
+            <input id="mTextBox1" type="text" value="Shift Data" disabled="disabled" />
+
+        </td>
+        <td>
+
+            <input id="mTextBox2" type="text" value="Settings" disabled="disabled" />
+
+        </td>
+        <td>
+
+            <input id="mTextBox3" type="text" value="Parameters" disabled="disabled" />
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mButton1" type="button" value="Actual State" />
+
+
+        </td>
+        <td>
+
+            <input id="mButton2" type="button" value="Project Assignment" />
+
+        </td>
+        <td>
+
+            <input id="mButton3" type="button" value="Parameter Setting" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mButton4" type="button" value="Shift Histroy" />
+
+        </td>
+        <td>
+
+            <input id="mButton5" type="button" value="Machine OFF-Setting" />
+        </td>
+        <td>
+
+
+            <input id="mButton6" type="button" value="Parameters-Display" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mButton7" type="button" value="Scraps" />
+        </td>
+        <td rowspan="2">
+
+            <input id="mTextBox4" type="text" value="Projects" disabled="disabled">
+        </td>
+        <td rowspan="2">
+
+            <input id="mTextBox5" type="text" value="Shifts" disabled="disabled">
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mButton8" type="button" value="OR and OA Accumulation" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mButton9" type="button" value="Summary Report" />
+        </td>
+        <td>
+
+            <input id="mButton10" type="button" value="Project-Setting" />
+        </td>
+        <td>
+
+            <input id="mButton11" type="button" value="Shift Definition-Setting" />
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mTextBox6" type="text" value=" Stop Times" disabled="disabled">
+        </td>
+        <td>
+
+            <input id="mButton12" type="button" value="Projects-Display" />
+        </td>
+        <td>
+
+            <input id="mButton13" type="button" value="Shift Definiton-Display" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mButton14" type="button" value="Time Sequence" />
+        </td>
+        <td>
+
+            <input id="mTextBox7" type="text" value="Problems" disabled="disabled">
+        </td>
+        <td>
+
+            <input id="mButton17" type="button" value="Input From Machines" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mButton15" type="button" value="Enter Problem Code Comment" />
+        </td>
+        <td>
+
+            <input id="mButton18" type="button" value="Stop Problem-Setting" />
+        </td>
+        <td>
+
+            <input id="mButton19" type="button" value="Password Change" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <input id="mButton16" type="button" value="Problem Accumulation" />
+        </td>
+        <td>
+
+            <input id="mButton20" type="button" value="Stop Problems-Display" />
+        </td>
+        <td></td>
+    </tr>
+</table>

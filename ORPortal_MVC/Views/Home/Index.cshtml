@@ -1,53 +1,96 @@
-﻿@{
+﻿@model ORPortal_MVC.Models.MachineGroup
+@{
     ViewBag.Title = "Index";
 }
+<link href="~/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery-ui-1.8.20.js"></script>
+<link href="~/Content/Site.css" rel="stylesheet" />
 <script type="text/javascript">
 
     $(function () {
-        $("#TextBox1").text();
-        $("#TextBox2").text();
+        $("#iTextBox1,iTextBox2").text()
+        
         $("#CP_Setting")
             .button()
-            .css('background', '#FF9B6A')
-            .css('color', 'black')
-            .css('border', '2px solid #CC6666')
-            .css('font-weight', 'normal')
-            .css('font-size', 'medium')
-            .click()
-        .mouseover(function () {
-            $(this).css('border','2px solid #993300')
-        })
-        .mouseout(function () {
-            $(this).css('border', '2px solid #CC6666')
-        });
-        $("#CP_Display")
-            .button()
-            .css('background', '#FF9B6A')
-            .css('color', 'black')
-            .css('border', '2px solid #CC6666')
-            .css('font-weight', 'normal')
-            .css('font-size', 'medium')
+            .css({ 'background': '#FF9B6A', 'color': 'black', 'border': '2px solid #CC6666', 'font-weight': 'normal', 'font-size': 'medium' })
             .click()
         .mouseover(function () {
             $(this).css('border', '2px solid #993300')
         })
         .mouseout(function () {
             $(this).css('border', '2px solid #CC6666')
-        });
-
-
+        })
+        $("#CP_Display")
+            .button()
+            .css({ 'background': '#FF9B6A', 'color': 'black', 'border': '2px solid #CC6666', 'font-weight': 'normal', 'font-size': 'medium' })
+            .click()
+        .mouseover(function () {
+            $(this).css('border', '2px solid #993300')
+        })
+        .mouseout(function () {
+            $(this).css('border', '2px solid #CC6666')
+        })
+        $("#iButton1").button()
+                .css({ 'background': '#FF9B6A', 'color': 'black', 'border': '2px solid #CC6666', 'font-weight': 'normal', 'font-size': 'medium' })
+                .click(function () {
+                    var url = '@Url.Action("Menu", "Home", new { mId ="1",mName="Che" })';
+                    $(location).attr('href', url);
+                })
+            .mouseover(function () {
+                $(this).css('border', '2px solid #993300')
+            })
+            .mouseout(function () {
+                $(this).css('border', '2px solid #CC6666')
+            })
+        $("#iButton2").button()
+               .css({ 'background': '#FF9B6A', 'color': 'black', 'border': '2px solid #CC6666', 'font-weight': 'normal', 'font-size': 'medium' })
+               .click(function () {
+                   
+                   var url = '@Url.Action("Menu", "Home", new { mId = "2",mName="AirCleaner" })';
+                   $(location).attr('href', url);
+               })
+           .mouseover(function () {
+               $(this).css('border', '2px solid #993300')
+           })
+           .mouseout(function () {
+               $(this).css('border', '2px solid #CC6666')
+           })
+        $("#iButton3").button()
+               .css({ 'background': '#FF9B6A', 'color': 'black', 'border': '2px solid #CC6666', 'font-weight': 'normal', 'font-size': 'medium' })
+               .click(function () {
+                   var url = '@Url.Action("Menu", "Home", new { mId = "3",mName="TubeFinal" })';
+                   $(location).attr('href', url);
+               })
+           .mouseover(function () {
+               $(this).css('border', '2px solid #993300')
+           })
+           .mouseout(function () {
+               $(this).css('border', '2px solid #CC6666')
+           })
+        $("#iButton4").button()
+               .css({ 'background': '#FF9B6A', 'color': 'black', 'border': '2px solid #CC6666', 'font-weight': 'normal', 'font-size': 'medium' })
+               .click(function () {
+                   
+                   var url = '@Url.Action("Menu", "Home", new { mId = "4",mName="Group1" })';
+                   $(location).attr('href', url);
+               })
+           .mouseover(function () {
+               $(this).css('border', '2px solid #993300')
+           })
+           .mouseout(function () {
+               $(this).css('border', '2px solid #CC6666')
+           })
     });
-    //function Dark(mnu) {
-
-    //    document.getElementById(mnu).style.border = '2px solid #993300';
-    //}
-    //function Light(mnu) {
-
-    //    document.getElementById(mnu).style.border = '2px solid #CC6666';
-    //}
+    
+        
+    
 
 </script>
-<table id="iTable1">
+
+
+
+<table id="iTable1" onscroll="true">
     <tr>
         <td style="width: 1044px; height: 428px;">
             <table id="iTable2">
@@ -57,47 +100,64 @@
                     <td style="height: 23px; width: 1103px; text-align: center;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="background-color: #FFCC66; height: 68px; text-align: center;" colspan="2">
-                        <input id="TextBox1" type="text" value="Machine Groups" disabled="disabled" />
+                    <td style="background-color: #FFCC66; height: 100px; text-align: center;" colspan="2">
+                        <input id="iTextBox1" type="text" value="Machine Groups" disabled="disabled" />
                     </td>
                     <td style="width: 1103px; text-align: center; height: 68px;">
 
-                        <input id="TextBox2" type="text" value="Problems" disabled="disabled" />
+                        <input id="iTextBox2" type="text" value="Problems" disabled="disabled" />
 
 
                     </td>
+
                 </tr>
+
                 <tr id="btn1">
-                    <td style="background-color: #FFCC66; width: 434px; height: 89px; text-align: center"></td>
-                    <td style="background-color: #FFCC66; width: 243px; height: 89px; text-align: center"></td>
+                     <td style="background-color: #FFCC66; height: 100px; text-align: center; width: 1103px; text-align: center; height: 48px;">
+                        <input id="iButton1" type="button" value="Che" />
+                    </td>
+
+                    <td style="background-color: #FFCC66; height: 100px; text-align: center; width: 1103px; text-align: center; height: 48px;">
+                        <input id="iButton2" type="button" value="AirCleaner" />
+                    </td>
+
                     <td id="CPS" style="width: 1103px; text-align: center; height: 48px;">
 
-                        <input id="CP_Setting" type="button" value="Common Problems-Setting" @*onmouseover="Dark('CP_Setting')" onmouseout="Light('CP_Setting')*@" />
+                        <input id="CP_Setting" type="button" value="Common Problems-Setting" />
 
 
                     </td>
+
+
+
                 </tr>
                 <tr id="btn2">
-                    <td style="background-color: #FFCC66; text-align: center; height: 48px; width: 434px;"></td>
-                    <td style="background-color: #FFCC66; text-align: center; height: 48px; width: 243px;"></td>
-                    <td id="CPD" style="width: 1103px; height: 48px;">
+                    <td style="background-color: #FFCC66; height: 100px; text-align: center; width: 1103px; text-align: center; height: 48px;">
+                        <input id="iButton3" type="button" value="TubeFinal" />
+                    </td>
 
-                        <input id="CP_Display" type="button" value="Common Problems-Display" @*onmouseover="Dark('CP_Display')" onmouseout="Light('CP_Display')*@" />
+                    <td style="background-color: #FFCC66; height: 100px; text-align: center; width: 1103px; text-align: center; height: 48px;">
+                        <input id="iButton4" type="button" value="Group-1" />
+                    </td>
+                    <td id="CPD" style="width: 1103px; height: 100px;">
+
+                        <input id="CP_Display" type="button" value="Common Problems-Display" />
 
                     </td>
+
                 </tr>
                 <tr>
-                    <td style="background-color: #FFCC66; text-align: center;" colspan="2">&nbsp;</td>
-                    <td style="width: 1103px; text-align: center;">&nbsp;</td>
+                    <td style="background-color: #FFCC66; width: 1103px; height: 100px;"></td>
+                    <td style="background-color: #FFCC66; width: 1103px; height: 100px;"></td>
+                    <td></td>
+                    
                 </tr>
                 <tr>
-                    <td style="background-color: #FFCC66; height: 17px; text-align: center;" colspan="2"></td>
-                    <td style="width: 1103px; height: 17px;"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
-                <tr>
-                    <td style="text-align: center; height: 39px;" colspan="2"></td>
-                    <td style="height: 39px; width: 1103px;"></td>
-                </tr>
+
             </table>
         </td>
     </tr>

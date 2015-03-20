@@ -10,7 +10,7 @@
     <link href="~/Content/Site.css" rel="stylesheet" />
     <script type="text/javascript">
         $(function () {
-
+            $("#headertext").text({ value: 'OR Display @ViewBag.Name' })
             $("#Homebtn").button()
             .css('background', '#FF9B6A')
             .css('color', 'black')
@@ -44,7 +44,7 @@
                 <p  style="background-color:white;" >
                    <img src="~/Images/headerLogo.jpg" alt="logo" id="headerlogo" />
                     
-                    <label id="headertext">OR Display</label>
+                    <input id="headertext" type="text" value="OR Display "/>
                         
                 </p>
            </div>

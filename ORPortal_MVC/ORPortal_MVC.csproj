@@ -116,99 +116,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Actual.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
+    <Compile Include="Migrations\201503170829497_Usersdb.cs" />
+    <Compile Include="Migrations\201503170829497_Usersdb.Designer.cs">
+      <DependentUpon>201503170829497_Usersdb.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Break.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Command.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CommonProblem.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\C__MigrationHistory.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\getDefinedStopDuration_Result.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\getOffDuration_Result.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\getUnDefinedStopDuration_Result.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Machine.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MachineGroup.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MachineInput.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ManPower.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\OFF.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ORPortal.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ORPortal.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ORPortal.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ORPortal.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ORPortal.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Plan.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Project.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ProjectMachine.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ProjectTracker.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Scrap.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Session.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Shift.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ShiftMachine.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SpecificProblem.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sp_helpdiagrams_Result.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Stop.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>ORPortal.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\MachineGroup.cs" />
+    <Compile Include="Models\Machine.cs" />
+    <Compile Include="Models\ORPortal_Db.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -289,23 +205,6 @@
     <Content Include="Images\whiteTriangle .png" />
     <Content Include="Scripts\Gruntfile.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
-    <EntityDeploy Include="Models\ORPortal.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ORPortal.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ORPortal.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ORPortal.edmx</DependentUpon>
-      <LastGenOutput>ORPortal.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\ORPortal.edmx.diagram">
-      <DependentUpon>ORPortal.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\ORPortal.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ORPortal.edmx</DependentUpon>
-      <LastGenOutput>ORPortal.cs</LastGenOutput>
-    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -336,7 +235,9 @@
     <Content Include="Scripts\Webforms\WebParts.js" />
     <Content Include="Scripts\Webforms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -344,15 +245,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\MachineSelection.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -362,6 +264,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201503170829497_Usersdb.resx">
+      <DependentUpon>201503170829497_Usersdb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -23,14 +23,17 @@
     text-align: center;
     Font-Size: XX-Large;
     Text-Align: Center;
-    margin-left: 15%;
+    margin-left: 10%;
     font-weight: Bold;
+    border-color:white;
+    border-style: none;
+    Border-Width: 0px;
 }
 
 #renderbody {
     height: 65%;
     width: 100%;
-    background-color: #fcf3be;
+    background-color: #FFFFCC;
 }
 
 #footer {
@@ -39,7 +42,7 @@
     background-color: #FF9B6A;
 }
 
-#TextBox1 {
+#iTextBox1 {
     border-color: #CC0000;
     border-style: Solid;
     Border-Width: 3px;
@@ -52,30 +55,31 @@
     font-size: medium;
 }
 
-#TextBox2 {
+#iTextBox2 {
     border-color: #CC0000;
     border-style: Solid;
     Border-Width: 3px;
     Color: Black;
     Height: 34px;
     Width: 250px;
-    font-weight:bold;
+    font-weight: bold;
+    margin-left: 0px;
+    text-align: center;
+    font-size: medium;
+}
+#mTextBox1,#mTextBox2,#mTextBox3,#mTextBox4,#mTextBox5,#mTextBox6,#mTextBox7 {
+    border-color: #CC0000;
+    border-style: Solid;
+    Border-Width: 3px;
+    Color: Black;
+    Height: 30px;
+    Width: 220px;
+    font-weight: bold;
     margin-left: 0px;
     text-align: center;
     font-size: medium;
 }
 
-#btn1 > td > input {
-    width: 250px;
-    height: 45px;
-    margin-left: 10px;
-}
-
-#btn2 > td > input {
-    width: 250px;
-    height: 45px;
-    margin-left: 10px;
-}
 
 #iTable1 {
     width: 99%;
@@ -94,13 +98,46 @@
     margin-top: 3%;
     height: 426px;
 }
-#CP_Setting.ui-button {
-      
-    background-color:#FF9B6A;
+
+#mTable {
+    border: 3px solid #CC6666;
+    width: 84%;
+    border-collapse: collapse;
+    background-color: #FFFFCC;
+    height: 500px;
+    margin-left: 10%;
+}
+
+    #mTable > tr > td {
+        text-align: center;
+        width: 230px;
+        height: 40px;
+    }
+#machinetable {
+    border: 3px solid #FFAF37; 
+    width: 30%; 
+    border-collapse: collapse; 
+    height:200px; 
+    margin-left: 37.5%; 
+    background-color: white;
+    
+}
+#CP_Setting {
+    background-color: #FF9B6A;
     border: solid 1px #FF9B6A;
 }
+
 #CP_Display {
-      
-    background-color:#FF9B6A;
+    background-color: #FF9B6A;
     border: solid 1px #FF9B6A;
+}
+
+#btn1 > td > input {
+    height: 48px;
+    width: 250px;
+}
+
+#btn2 > td > input {
+    height: 48px;
+    width: 250px;
 }
